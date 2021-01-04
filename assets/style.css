@@ -76,6 +76,18 @@ h1, .h1 {
     backdrop-filter: blur(12px);
 }
 
+@supports (backdrop-filter: none) {
+	.bg-light {
+		backdrop-filter: blur(12px)!important;
+	}
+}
+
+@supports not (backdrop-filter: none) {
+  .bg-light {
+    background-color: white !important;
+  }
+}
+
 .navbar-light .navbar-brand {
     color: #242424;
   }
@@ -363,6 +375,18 @@ footer {
   margin-right: auto;
   position: fixed;
   bottom: 0;
+}
+
+@supports (backdrop-filter: none) {
+footer {
+		backdrop-filter: blur(12px);
+	}
+}
+
+@supports not (backdrop-filter: none) {
+footer {
+    background-color: white;
+  }
 }
 
 p footer {
