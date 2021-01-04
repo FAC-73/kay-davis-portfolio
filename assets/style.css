@@ -39,13 +39,12 @@ h1, .h1 {
 /* Bio copy */
 
 .container-lead {
-  position: relative;
   margin-left: 48px;
   padding: 4px 16px 0px 16px;
   border-radius: 8px;
   background-color: #1f1f1f;
   flex: 0 0 50%;
-  max-width: 50%;
+  max-width: 40%;
   position: absolute;
   top: 50%;
   margin-top: -50px;
@@ -306,8 +305,8 @@ a:not([href]):not([class]):hover {
 
 .avatar{
   border-radius: 100%;
-  height: 160px;
-  width: 160px;
+  height: inherit;
+  width: inherit;
   display: block;
   margin-left: auto;
   margin-right: auto;
