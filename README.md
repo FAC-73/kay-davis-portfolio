@@ -41,6 +41,8 @@ Personal Portfolio website - containing responsive layouts for each page includi
 * [HTML](https://www.w3schools.com/)
 * [CSS](https://www.w3schools.com/)
 * [BootstrapV4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+* [FontAwesome](https://fontawesome.com/)
+
 
 
 
@@ -101,11 +103,13 @@ Homepage includes an animated, responsive full width + height background image t
 
 #### Updating HTML content
 Follow the semantic HTML element layout as defined in index.html, Portfolio.html and Contact.html <br>
-Add main content sections within main element - include a header, paragraph text, image and alt text descriptions for accessibility and SEO. <br>
-Add complementary sections within aside element - include a header, paragraph text image and alt text descriptions for accessibility and SEO. 
+Update bio information in the container-lead block this section uses the ARIA region role. 
+For the looping animated background image follow the steps outlined above. Ensure to include a aria-label within the html list element, the role 'img' has been included to ensure that screenreaders are able to provide descriptions for the background images. <br>
+When adding new image tiles to the portfolio sections provide a project name, optional short description and link within the p tag. Image tiles for projects include the ARIA role group. Tab focus follows logical numerical ordering from top to bottom, left to right. <br>
+If adding a new section in the portfolio page include a H1 title and add a date range for the grouping for easier scanability.
 
 #### Updating CSS
-If changing styles for main or complementary elements replace or add properties within aside or main. <br>
+Some CSS is overiding styles from Bootstrap<br>
 Text styles are grouped together with H1, H2, H3, P. <br>
 Links and psuedo selectors are grouped in the links section. <br>
 Most CSS styles use semantic classes to limit the need to reference classes within tags.
