@@ -104,7 +104,7 @@ Homepage includes an animated, responsive full width + height background image t
 #### Updating HTML content
 Follow the semantic HTML element layout as defined in index.html, Portfolio.html and Contact.html <br>
 Update bio information in the container-lead block this section uses the ARIA region role. 
-For the looping animated background image follow the steps outlined above. Ensure to include a aria-label within the html list element, the role 'img' has been included to ensure that screenreaders are able to provide descriptions for the background images. <br>
+For the looping animated background image follow the steps outlined above. Ensure to include a aria-label within the span element within each list item, the role 'img' has been included to ensure that screenreaders are able to provide descriptions for the background images. <br>
 When adding new image tiles to the portfolio sections provide a project name, optional short description and link within the p tag. Image tiles for projects include the ARIA role group. Tab focus follows logical numerical ordering from top to bottom, left to right. <br>
 If adding a new section in the portfolio page include a H1 title and add a date range for the grouping for easier scanability.
 
