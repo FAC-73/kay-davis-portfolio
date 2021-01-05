@@ -31,7 +31,7 @@ Personal Portfolio website - containing responsive layouts for each page includi
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Website screenshot](https://github.com/FAC-73/Code-Refactor/blob/main/assets/images/Horiseon-website.jpg?raw=true "Horiseon Website")
+![Website screenshot](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/Index-screenshot.jpg?raw=true "Kay Davis Portfolio")
 
 **Kay Davis Portfolio Website - Showcases my design work over the last 10 years. Built using the bootstrap V4 components and leveraging the bootstrap responsive grid system. Where possible using as much semantic HTML. Where Divs with classes have been used additional ARIA information has been included for roles and labels. Includes three main pages - Home, Portfolio and Contact. Also included is sticky behavior for header and navigation, as well as the page footer**
 
@@ -75,28 +75,30 @@ Homepage includes an animated, responsive full width + height background image t
 Homepage includes an animated, responsive full width + height background image that cycles through up to 6 images infinitely
 
 
-1. Remove comments from link
+1. Add new images using the animation.css stylesheet
    ```
-   link rel="stylesheet" href="./assets/css/style_v2.css"
-   ```
-
-2. Comment this link out
-   ```
-   link rel="stylesheet" href="./assets/css/style.css"
+   link rel="stylesheet" href="./assets/css/animation.css"
    ```
 
-3. Switch out the assets in the aside section for lighter icons. Add '_light' in the file name extension
+2. Add images into this folder
+   ```
+   ./assets/Images/Project-images
+   ```
+
+3. Copy the file path of the image you want and replace it here
    ```
    "./assets/images/cost-management.png" - Light mode
    "./assets/images/cost-management_light.png" - Dark mode
    ```
 
-![Website screenshot](https://github.com/FAC-73/Code-Refactor/blob/main/assets/images/Horiseon-website-dark.jpg?raw=true "Horiseon Website dark")
+![Portfolio screenshots]( "https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/Portfolio-screenshot.jpg?raw=true")
+![Portfolio screenshots]( "https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/imagegridportfolio-screenshot.jpg?raw=true")
+![Responsive layout]( "https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/imagegridportfolio-screenshot.jpg?raw=true")
 
 ## Contributing
 
 #### Updating HTML content
-Follow the semantic HTML element layout as defined in the index.html text. <br>
+Follow the semantic HTML element layout as defined in index.html, Portfolio.html and Contact.html <br>
 Add main content sections within main element - include a header, paragraph text, image and alt text descriptions for accessibility and SEO. <br>
 Add complementary sections within aside element - include a header, paragraph text image and alt text descriptions for accessibility and SEO. 
 
