@@ -36,17 +36,17 @@ h1, .h1 {
 }
 
 
-/* Bio copy */
+/* Bio */
 
 .container-lead {
   margin-left: 48px;
-  padding: 4px 16px 0px 16px;
+  padding: 4px 20px 8px 20px;
   border-radius: 8px;
   background-color: #1f1f1f;
   flex: 0 0 50%;
-  max-width: 40%;
+  max-width: 50%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   margin-top: -50px;
 }
 
@@ -54,6 +54,16 @@ h1, .h1 {
   font-size: 16px;
   font-weight: 400;
   color: white;
+}
+
+
+.avatar{
+  border-radius: 100%;
+  height: inherit;
+  width: inherit;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -283,7 +293,7 @@ a:not([href]):not([class]):hover {
 }
 
 
-/* Thumbnails */
+/* Image + content */
 
 .img-fluid-rounded {
   max-width: 100%;
@@ -303,14 +313,6 @@ a:not([href]):not([class]):hover {
   font-weight: 400;
 }
 
-.avatar{
-  border-radius: 100%;
-  height: inherit;
-  width: inherit;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* Grid */
 
@@ -338,7 +340,6 @@ a:not([href]):not([class]):hover {
   margin-right: auto;
   margin-left: auto;
 }
-
 
 @media (min-width: 400px) {
   .container, .container-sm {
