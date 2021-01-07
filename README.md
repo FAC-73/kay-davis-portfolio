@@ -1,6 +1,7 @@
 # Personal Portfolio
 Personal Portfolio website - containing responsive layouts for each page including responsive image grids and reflowing content. Leverages bootstraps grid system. 
 
+![Website screenshot](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/Index-screenshot.jpg?raw=true "Kay Davis Portfolio")
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -31,9 +32,9 @@ Personal Portfolio website - containing responsive layouts for each page includi
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Website screenshot](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/Index-screenshot.jpg?raw=true "Kay Davis Portfolio")
+![Portfolio screenshots](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/Portfolio-screenshot.jpg?raw=true "Portfolio hero image")
 
-**Kay Davis Portfolio Website - Showcases my design work over the last 10 years. Built using the bootstrap V4 components and leveraging the bootstrap responsive grid system. Where possible using as much semantic HTML. Where Divs with classes have been used additional ARIA information has been included for roles and labels. Includes three main pages - Home, Portfolio and Contact. Also included is sticky behavior for header and navigation, as well as the page footer**
+**Kay Davis Portfolio Website - Showcases my design work over the last 10 years. <br> Built using the bootstrap V4 components and leveraging the bootstrap responsive grid system. Where possible using as much semantic HTML. Where divs with non semantic classes have been used additional ARIA information has been included for roles and labels. <br> Includes three main pages - Home, Portfolio and Contact. Also included is sticky behavior for header and navigation, as well as the page footer**
 
 
 ### Built With
@@ -68,11 +69,15 @@ To get a local copy up and running follow these simple steps.
 ## Usage
 
 #### Updating HTML content
-HTML & CSS is structured using semantic HTML where possible. For accessibility and SEO requirements headers are ordered in hierarchical order, and layout follows established layout best practices. 
+HTML & CSS is structured using semantic HTML where possible. For accessibility and SEO requirements headers are ordered in hierarchical order. Images include alt descriptions, as well as ARIA-roles and labels for non-semantic elements.  
 
-Homepage includes an animated, responsive full width + height background image that loops through up to 6 images.
+Homepage includes an animated, responsive full width + height background image that loops through up to 6 images, as well as a bio section along with a profile picture.
 
-Portfolio page uses the Bootstrap grid system and can be segmented by a H1 header between groupings of images to denote date ranges.
+Portfolio page uses the Bootstrap grid system and can be segmented by a H1 header between groupings of images to denote date range.
+
+Contact form includes input fields for name, email and message and are also responsive.
+
+Sticky Footer includes link to social media and is accessible on all pages.
 
 
 #### Homepage animated background
@@ -95,20 +100,27 @@ Homepage includes an animated, responsive full width + height background image t
     background-image: url(../Images/Project-images/uwp-hero-1.jpg) 
    ```
 
-4. If you want to add more than the 6 images in the list add another item and enumerate it (7) etc. Animation timings increment by 6s for each image so the 7th item would be 36s
+4. If you want to add more than the 6 images add another item into the css and enumerate it (7) and onwards. Animation timings increment by 6s for each image so the 7th item would be 36s 
 ```
-    .bg-slideshow li:nth-child(7) span { 
+  .bg-slideshow li:nth-child(7) span { 
     background-image: url(../Images/Project-images/image-name.jpg);
     -webkit-animation-delay: 36s;
     -moz-animation-delay: 36s;
     -o-animation-delay: 36s;
     -ms-animation-delay: 36s;
     animation-delay: 36s;
-    }
-    ``` 
+  ```
+
+5. Update the index.html, add another list item. Make sure to include an aria-label describing the background image for screenreaders
+ ```
+   <!-- bg image slideshow -->
+<ul class="bg-slideshow">
+    <li style="color: transparent;"><span role="img" aria-label="some image description">Image 07</span></li>
+</ul>
+   ```
 
 
-![Portfolio screenshots](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/Portfolio-screenshot.jpg?raw=true "Portfolio hero image")
+
 
 ![Portfolio screenshots](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/imagegridportfolio-screenshot.jpg?raw=true "Portfolio project tiles")
 
@@ -118,16 +130,16 @@ Homepage includes an animated, responsive full width + height background image t
 
 #### Updating HTML content
 Follow the semantic HTML element layout as defined in index.html, Portfolio.html and Contact.html <br>
-Update bio information in the container-lead block this section uses the ARIA region role. 
+Update bio information in the container-lead block. 
 For the looping animated background image follow the steps outlined above. Ensure to include a aria-label within the span element within each list item, the role 'img' has been included to ensure that screenreaders are able to provide descriptions for the background images. <br>
 When adding new image tiles to the portfolio sections provide a project name, optional short description and link within the p tag. Image tiles for projects include the ARIA role group. Tab focus follows logical numerical ordering from top to bottom, left to right. <br>
 If adding a new section in the portfolio page include a H1 title and add a date range for the grouping for easier scanability.
 
 #### Updating CSS
 For main style references use style.css, some CSS is not overiding Bootstrap's CSS<br>
-Text styles are grouped together with H1, H2, H3, P. <br>
-Links and psuedo selectors are grouped in the links section. <br>
-Most CSS styles use semantic classes to limit the need to reference classes within tags.
+In style.css, styles are grouped by type and components i.e. Buttons, Typography, Nav, Footer etc.<br>
+Animation.css includes all the css for the looping image background on the homepage<br>
+CSS styles use semantic classes where possible to limit the need to reference classes within tags.
 
 
 #### Pushing to GitHub
