@@ -34,7 +34,7 @@ Personal Portfolio website - containing responsive layouts for each page includi
 
 ![Portfolio screenshots](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/Portfolio-screenshot.jpg?raw=true "Portfolio hero image")
 
-**Kay Davis Portfolio Website - Showcases my design work over the last 10 years. <br> Built using the bootstrap V4 components and leveraging the bootstrap responsive grid system. Where possible using as much semantic HTML. Where divs with non semantic classes have been used additional ARIA information has been included for roles and labels. <br> Includes three main pages - Home, Portfolio and Contact. Also included is sticky behavior for header and navigation, as well as the page footer**
+**Built using the bootstrap V4 components and leveraging the bootstrap responsive grid system. Where possible using as much semantic HTML. Where divs with non semantic classes have been used additional ARIA information has been included for roles and labels. Includes three main pages - Home, Portfolio and Contact. Also included is sticky behavior for header and navigation, as well as the page footer**
 
 
 ### Built With
@@ -68,15 +68,15 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-#### Updating HTML content
+#### What's included
 HTML & CSS is structured using semantic HTML where possible. For accessibility and SEO requirements headers are ordered in hierarchical order. Images include alt descriptions, as well as ARIA-roles and labels for non-semantic elements.  
-
+<br><br>
 Homepage includes an animated, responsive full width + height background image that loops through up to 6 images, as well as a bio section along with a profile picture.
-
+<br><br>
 Portfolio page uses the Bootstrap grid system and can be segmented by a H1 header between groupings of images to denote date range.
-
+<br><br>
 Contact form includes input fields for name, email and message and are also responsive.
-
+<br><br>
 Sticky Footer includes link to social media and is accessible on all pages.
 
 
@@ -118,8 +118,6 @@ Homepage includes an animated, responsive full width + height background image t
     <li style="color: transparent;"><span role="img" aria-label="some image description">Image 07</span></li>
 </ul>
    ```
-
-
 
 
 ![Portfolio screenshots](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/imagegridportfolio-screenshot.jpg?raw=true "Portfolio project tiles")
