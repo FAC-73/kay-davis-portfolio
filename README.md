@@ -76,7 +76,7 @@ To get a local copy up and running follow these simple steps.
 2. Homepage includes an animated, responsive full width + height background image that loops through up to 6 images, as well as a bio section along with a profile picture.<br><br>
 3. Portfolio page uses the Bootstrap grid system and can be segmented by a H1 header between groupings of images to denote date range.<br><br>
 4. Contact form includes input fields for name, email and message and are also responsive.<br><br> 
-5. Sticky Footer includes link to social media and is accessible on all pages.
+5. Sticky Footer includes link to social media and is accessible on all pages.<br><br> 
 6. All pages scale down to a min-width of 400px. Images scale and reflow down to fit smaller screen resolutions and include margins.
 
 ![Responsive layout](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/responsive-portfolio.jpg?raw=true "Responsive views")
@@ -100,7 +100,7 @@ Homepage includes an animated, responsive full width + height background image t
 3. Copy the file path of the image you want and replace it within the css file ./assets/css/animation.css 
    ```
    .bg-slideshow li:nth-child(1) span { 
-    background-image: url(../Images/Project-images/uwp-hero-1.jpg) 
+    background-image: url(../Images/Project-images/image-namejpg) 
    ```
 
 4. If you want to add more than the 6 images add another item into the css and enumerate it (7) and onwards. Animation timings increment by 6s for each image so the 7th item would be 36s 
@@ -127,16 +127,16 @@ Homepage includes an animated, responsive full width + height background image t
 ## Contributing
 
 #### Updating HTML content
-1. Follow the semantic HTML element layout as defined in index.html, Portfolio.html and Contact.html <br>
-Update bio information in the container-lead block. <br><br>
-2. For the looping animated background image follow the steps outlined above. Ensure to include a aria-label within the span element within each list item, the role 'img' has been included to ensure that screenreaders are able to provide descriptions for the background images. <br><br>
-3. When adding new image tiles to the portfolio sections provide a project name, optional short description and link within the p tag. Image tiles for projects include the ARIA role group. Tab focus follows logical numerical ordering from top to bottom, left to right. <br><br>
-4. If adding a new section in the portfolio page include a H1 title and add a date range for the grouping for easier scanability.
+1. Follow the semantic HTML element layout as defined in index.html, Portfolio.html and Contact.html<br><br> 
+2. Update bio information in the container-lead block. <br><br>
+3. For the looping animated background image follow the steps outlined above. Ensure to include a aria-label within the span element within each list item, the role 'img' has been included to ensure that screenreaders are able to provide descriptions for the background images. <br><br>
+4. When adding new image tiles to the portfolio sections provide a project name, optional short description and link within the p tag. Image tiles for projects include the ARIA role group. Tab focus follows logical numerical ordering from top to bottom, left to right. <br><br>
+5. If adding a new section in the portfolio page include a H1 title and add a date range for the grouping for easier scanability.
 
 #### Updating CSS
-1. For main style references use style.css, some CSS is not overiding Bootstrap's CSS<br>
-2. In style.css, styles are grouped by type and components i.e. Buttons, Typography, Nav, Footer etc.<br>
-3. Animation.css includes all the css for the looping image background on the homepage<br>
+1. For main style references use style.css, some CSS is not overiding Bootstrap's CSS<br><br> 
+2. In style.css, styles are grouped by type and components i.e. Buttons, Typography, Nav, Footer etc.<br><br> 
+3. Animation.css includes all the css for the looping image background on the homepage<<br><br> 
 4. CSS styles use semantic classes where possible to limit the need to reference classes within tags.
 
 
