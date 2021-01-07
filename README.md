@@ -136,7 +136,7 @@ Homepage includes an animated, responsive full width + height background image t
 #### Updating CSS
 1. For main style references use style.css, some CSS is not overiding Bootstrap's CSS<br><br> 
 2. In style.css, styles are grouped by type and components i.e. Buttons, Typography, Nav, Footer etc.<br><br> 
-3. Animation.css includes all the css for the looping image background on the homepage<<br><br> 
+3. Animation.css includes all the css for the looping image background on the homepage<br><br>
 4. CSS styles use semantic classes where possible to limit the need to reference classes within tags.
 
 
