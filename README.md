@@ -33,6 +33,7 @@ Personal Portfolio website - containing responsive layouts for each page includi
 ## About The Project
 
 ![Portfolio screenshots](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/Portfolio-screenshot.jpg?raw=true "Portfolio hero image")
+<br><br>
 
 **Built using the bootstrap V4 components and leveraging the bootstrap responsive grid system. Where possible using as much semantic HTML. Where divs with non semantic classes have been used additional ARIA information has been included for roles and labels. Includes three main pages - Home, Portfolio and Contact. Also included is sticky behavior for header and navigation, as well as the page footer**
 
@@ -68,9 +69,12 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+![Portfolio screenshots](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/imagegridportfolio-screenshot.jpg?raw=true "Portfolio project tiles")
+
+![Responsive layout](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/responsive-portfolio.jpg?raw=true "Responsive views")
+
 #### What's included
-HTML & CSS is structured using semantic HTML where possible. For accessibility and SEO requirements headers are ordered in hierarchical order. Images include alt descriptions, as well as ARIA-roles and labels for non-semantic elements.  
-<br><br>
+HTML & CSS is structured using semantic HTML where possible. For accessibility and SEO requirements headers are ordered in hierarchical order. Images include alt descriptions, as well as ARIA-roles and labels for non-semantic elements.<br><br>
 Homepage includes an animated, responsive full width + height background image that loops through up to 6 images, as well as a bio section along with a profile picture.
 <br><br>
 Portfolio page uses the Bootstrap grid system and can be segmented by a H1 header between groupings of images to denote date range.
@@ -78,6 +82,7 @@ Portfolio page uses the Bootstrap grid system and can be segmented by a H1 heade
 Contact form includes input fields for name, email and message and are also responsive.
 <br><br>
 Sticky Footer includes link to social media and is accessible on all pages.
+
 
 
 #### Homepage animated background
@@ -120,17 +125,14 @@ Homepage includes an animated, responsive full width + height background image t
    ```
 
 
-![Portfolio screenshots](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/imagegridportfolio-screenshot.jpg?raw=true "Portfolio project tiles")
-
-![Responsive layout](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/imagegridportfolio-screenshot.jpg?raw=true "Responsive views")
 
 ## Contributing
 
 #### Updating HTML content
 Follow the semantic HTML element layout as defined in index.html, Portfolio.html and Contact.html <br>
-Update bio information in the container-lead block. 
-For the looping animated background image follow the steps outlined above. Ensure to include a aria-label within the span element within each list item, the role 'img' has been included to ensure that screenreaders are able to provide descriptions for the background images. <br>
-When adding new image tiles to the portfolio sections provide a project name, optional short description and link within the p tag. Image tiles for projects include the ARIA role group. Tab focus follows logical numerical ordering from top to bottom, left to right. <br>
+Update bio information in the container-lead block. <br><br>
+For the looping animated background image follow the steps outlined above. Ensure to include a aria-label within the span element within each list item, the role 'img' has been included to ensure that screenreaders are able to provide descriptions for the background images. <br><br>
+When adding new image tiles to the portfolio sections provide a project name, optional short description and link within the p tag. Image tiles for projects include the ARIA role group. Tab focus follows logical numerical ordering from top to bottom, left to right. <br><br>
 If adding a new section in the portfolio page include a H1 title and add a date range for the grouping for easier scanability.
 
 #### Updating CSS
