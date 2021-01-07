@@ -70,11 +70,13 @@ To get a local copy up and running follow these simple steps.
 #### Updating HTML content
 HTML & CSS is structured using semantic HTML where possible. For accessibility and SEO requirements headers are ordered in hierarchical order, and layout follows established layout best practices. 
 
-Homepage includes an animated, responsive full width + height background image that cycles through up to 6 images infinitely
+Homepage includes an animated, responsive full width + height background image that loops through up to 6 images.
+
+Portfolio page uses the Bootstrap grid system and can be segmented by a H1 header between groupings of images to denote date ranges.
 
 
 #### Homepage animated background
-Homepage includes an animated, responsive full width + height background image that cycles through up to 6 images infinitely
+Homepage includes an animated, responsive full width + height background image that loops through up to 6 images.
 
 
 1. Add new images using the animation.css stylesheet
@@ -87,11 +89,24 @@ Homepage includes an animated, responsive full width + height background image t
    ./assets/Images/Project-images
    ```
 
-3. Copy the file path of the image you want and replace it here
+3. Copy the file path of the image you want and replace it within the css file ./assets/css/animation.css 
    ```
-   "./assets/images/cost-management.png" - Light mode
-   "./assets/images/cost-management_light.png" - Dark mode
+   .bg-slideshow li:nth-child(1) span { 
+    background-image: url(../Images/Project-images/uwp-hero-1.jpg) 
    ```
+
+4. If you want to add more than the 6 images in the list add another item and enumerate it (7) etc. Animation timings increment by 6s for each image so the 7th item would be 36s
+```
+    .bg-slideshow li:nth-child(7) span { 
+    background-image: url(../Images/Project-images/image-name.jpg);
+    -webkit-animation-delay: 36s;
+    -moz-animation-delay: 36s;
+    -o-animation-delay: 36s;
+    -ms-animation-delay: 36s;
+    animation-delay: 36s;
+    }
+    ``` 
+
 
 ![Portfolio screenshots](https://github.com/FAC-73/kay-davis-portfolio/blob/main/assets/Images/readme-images/Portfolio-screenshot.jpg?raw=true "Portfolio hero image")
 
@@ -109,7 +124,7 @@ When adding new image tiles to the portfolio sections provide a project name, op
 If adding a new section in the portfolio page include a H1 title and add a date range for the grouping for easier scanability.
 
 #### Updating CSS
-Some CSS is overiding styles from Bootstrap<br>
+For main style references use style.css, some CSS is not overiding Bootstrap's CSS<br>
 Text styles are grouped together with H1, H2, H3, P. <br>
 Links and psuedo selectors are grouped in the links section. <br>
 Most CSS styles use semantic classes to limit the need to reference classes within tags.
